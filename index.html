@@ -5,7 +5,12 @@
 		<meta charset="utf-8" />
 	</head>
 	<body>
+    <p>Fading/noisy-landscape, based on brownian motion, implemented in less than a tweet in a js1k environment:</p>
+    <code>
+d=a.getImageData(p=0,0,128,128);setInterval("for(i=k=66055;--i;d.data[p%k]++)p+=Math.random()*k*k&amp;k;a.putImageData(d,0,0)",50)
+</code>
 		<canvas id="c"></canvas>
+    <p>Reload to watch again.</p>
 		<script>
 			var b = document.body;
 			var c = document.getElementsByTagName('canvas')[0];
